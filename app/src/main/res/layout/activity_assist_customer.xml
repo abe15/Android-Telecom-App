@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:orientation="vertical"
+    android:background="@drawable/bg_activity_005"
+    android:id="@+id/menu_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <TextView
+                android:text="@string/assist_001"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="35sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/promp_bar_003"
+                android:layout_width="383dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|bottom"
+            android:orientation="horizontal"
+            android:layout_gravity="left">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userNameInput"
+                android:hint="Enter customers username"
+                android:layout_weight="1" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/assist_000"
+                android:id="@+id/button"
+                android:background="@drawable/greenbutton"
+                style="@style/ButtonText"
+                android:onClick="onClickSearch" />
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/scrollView_01"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:isScrollContainer="false"
+            android:layout_weight = "8">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/mainAssist">
+
+                <TextView
+                    android:text="Customer Subscriptions"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/promp_bar_003"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+
+                <TableRow android:id="@+id/tabla_cabecera" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    ></TableRow>
+                <TableLayout android:id="@+id/table" android:layout_height="match_parent"  android:stretchColumns="*" android:layout_width="match_parent">
+                    <TableRow android:id="@+id/tableRow1" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/textView8" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/textView9" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/textView10" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/textView11" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:text="Available Subscriptions to Add"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/promp_bar_003"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:layout_gravity="center_horizontal" />
+
+                <TableRow
+                    android:id="@+id/headTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:stretchColumns="*"
+                    >
+
+                    <TableRow
+                        android:id="@+id/tableRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/textView5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/textView6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/textView7" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:id="@+id/textView13" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:text="Cancellation Fees"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/promp_bar_003"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:layout_gravity="center_horizontal" />
+
+                <TableRow
+                    android:id="@+id/headTable2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TableLayout
+                    android:id="@+id/tableLowLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:stretchColumns="*"
+                    >
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView15" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView17" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView18"
+                            android:textColor="#FFFFFF" />
+
+                    </TableRow>
+                </TableLayout>
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="horizontal" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <Button
+                    android:id="@+id/button_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:background="@drawable/yellowbutton"
+                    style="@style/ButtonText"
+                    android:text="@string/universal_001"
+                    android:onClick="onLogOut" />
+
+            </TableRow>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

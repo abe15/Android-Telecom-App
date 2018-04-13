@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UCSD Telecom</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tap_prompt">Touch to Proceed</string>
+    <string name="universal_000">Back</string>
+    <string name="universal_001">Logout</string>
+    <string name="universal_003">Send Report</string>
+    <string name="null_string">null</string>
+    <string name="pre_000">You have successfully logged in.</string>
+    <string name="pre_001">Invalid username/password. Please try again.</string>
+    <string name="pre_002">You have logged out.</string>
+    <string name="pre_003">You have successfully signed up.</string>
+    <string name="pre_004">Account have successfully been deleted.</string>
+
+    <!-- Login/Sign-Up Screen -->
+    <string name="login_title">Login</string>
+    <string name="login_000">Username:</string>
+    <string name="login_000a">Username</string>
+    <string name="login_001">Password:</string>
+    <string name="login_001a">Password</string>
+    <string name="login_002">New here? Click below to register.</string>
+    <string name="login_003">Register</string>
+    <string name="login_004">Login</string>
+    <string name="login_005">Register as retail customer</string>
+    <string name="login_006">Register as commercial customer</string>
+
+    <!-- Sign Up Attributes -->
+    <string name="sign_title">Sign Up</string>
+    <string name="sign_000">Username:</string>
+    <string name="sign_000a">Username:</string>
+    <string name="sign_000c">Business name</string>
+    <string name="sign_001">Password:</string>
+    <string name="sign_001a">Password</string>
+    <string name="sign_002">Re-type Password:</string>
+    <string name="sign_002a">Re-type Password</string>
+    <string name="sign_003">Date of Birth:</string>
+    <string name="sign_003a">Date of Birth</string>
+    <string name="sign_004">E-Mail Address:</string>
+    <string name="sign_004a">E-Mail Address</string>
+    <string name="sign_005">Phone Number:</string>
+    <string name="sign_005a">Phone Number</string>
+    <string name="sign_006">Sign Up</string>
+    <string name="sign_007">Personal Information:</string>
+    <string name="sign_007a">First Name</string>
+    <string name="sign_007b">Middle Initials</string>
+    <string name="sign_007c">Last Name</string>
+    <string name="sign_007d">User\'s Name:</string>
+    <string name="sign_008">Account Information:</string>
+    <string name="sign_009">User\'s Address:</string>
+    <string name="sign_009a">Street Address</string>
+    <string name="sign_009b">City</string>
+    <string name="sign_009c">State</string>
+    <string name="sign_009d">ZIP Code</string>
+    <string name="sign_010">Responsible person\'s First Name</string>
+    <string name="sign_010a">Responsible person\'s Last Name</string>
+    <string name="sign_010b">Responsible person\'s Middle Name</string>
+    <string name="sign_011">The following applies to the business\' billing department</string>
+    <string name="sign_error_000">Error\: Username is needed.</string>
+    <string name="sign_error_001">Error\: Password is needed.</string>
+    <string name="sign_error_002">Error\: Username has been taken.</string>
+    <string name="sign_error_003">Error\: The passwords doesn\'t match.</string>
+    <string name="sign_error_004">Error\: A sign up error occurred.</string>
+    <string name="title_activity_sign_up">sign_up</string>
+    <string name="title_activity_account_main_menu">account_main_menu</string>
+    <string name="sign_error_005">First name is needed</string>
+    <string name="sign_error_006">Middle name is needed</string>
+    <string name="sign_error_007">Last name is needed</string>
+    <string name="sign_error_008">Address is needed</string>
+    <string name="sign_error_009">City is needed</string>
+    <string name="sign_error_010">State is needed</string>
+    <string name="sign_error_011">Zip Code is needed</string>
+    <string name="sign_error_012">Birthday is needed</string>
+    <string name="sign_error_013">Phone number is needed</string>
+    <string name="sign_error_014">Email is needed</string>
+    <string name="sign_error_015">Invalid email address</string>
+    <string name="sign_error_016">Business Name is needed</string>
+
+    <!-- Account Main Menu Screen -->
+    <string name="account_title">Account Menu</string>
+    <string name="account_000">Account Profile</string>
+    <string name="account_001">View and Edit Services/Packages</string>
+    <string name="account_002">Subscribe Services/Packages</string>
+    <string name="account_003">View Bill</string>
+    <string name="account_004">Customer Service</string>
+    <string name="account_005">Settings</string>
+    <string name="title_activity_account_profile">account_profile</string>
+
+    <!-- Representative Main Menu Screen -->
+    <string name="rep_account_000">Create and Edit Services/Packages</string>
+    <string name="rep_account_001">Delete Services/Packages from App</string>
+    <string name="rep_account_002">Help Customer</string>
+    <string name="rep_account_003">Assist Customer</string>
+    <string name="rep_account_004">Sign Up Customer</string>
+
+    <!-- Representative Create Package/Service Screen -->
+    <string name="title_activity_rep_create_package">Create Packages</string>
+    <string name="create_000">What services would you like to add to this package?</string>
+    <string name="create_001">Please enter price</string>
+    <string name="create_002">Create Package/Service</string>
+    <string name="create_003">Wireless</string>
+    <string name="create_004">Landline</string>
+    <string name="create_005">Internet</string>
+    <string name="create_006">Successfully created package</string>
+
+    <string name="error_create_001">Check at least one service</string>
+    <string name="error_create_002">Enter Price</string>
+    <string name="error_create_003">Enter Duration</string>
+
+    <string name="Complete">Complete</string>
+    <string name="Error">Choose at least one service</string>
+    <string name="create_007">In App Packages</string>
+    <string name="create_008">Set contract duration</string>
+
+    <!-- Representative Assist Customer Screen -->
+    <string name="assist_000">Search</string>
+    <string name="assist_001">Assist Customer</string>
+    <string name="assist_002">Customer Info</string>
+
+    <!-- Account Profile Screen -->
+    <string name="profile_title">Account Profile</string>
+    <string name="profile_000">Personal Information:</string>
+    <string name="profile_000a">First name: </string>
+    <string name="profile_000b">Middle name: </string>
+    <string name="profile_000c">Last name: </string>
+    <string name="profile_000d">Address: </string>
+    <string name="profile_000e">City: </string>
+    <string name="profile_000f">State: </string>
+    <string name="profile_000g">Zip Code: </string>
+    <string name="profile_001">Account Information:</string>
+    <string name="profile_001a">Username: </string>
+    <string name="profile_password">Change Password</string>
+    <string name="title_activity_customer_service">customer_service</string>
+    <string name="profile_002">Successfully set a threshold</string>
+
+    <string name="error_empty_field">Please enter a number</string>
+
+
+
+
+    <!-- Customer Service Screen -->
+    <string name="customer_title">Customer Service</string>
+    <string name="customer_000">Contact Information</string>
+    <string name="customer_000a">Telephone: (866) 564\- 4789</string>
+    <string name="customer_000b">E-Mail: help@telecom.net</string>
+    <string name="customer_000c">Website:</string>
+    <string name="customer_000d">Hours: Monday Through Friday \n 8:00am \- 9:00pm pst</string>
+    <string name="customer_001">File Report</string>
+    <string name="customer_001a">Type of Report:</string>
+    <string name="customer_001b">Report Message:</string>
+    <string name="customer_001c">Type your message.</string>
+    <string name="title_activity_commercial_sign_up">commercial_sign_up</string>
+    <string name="title_activity_rep_account_main_menu">RepAccountMainMenuActivity</string>
+    <string name="title_activity_create_package_service">Create Package/Service</string>
+    <string name="title_activity_browse">BrowseActivity</string>
+
+    <!-- Browse App Screen -->
+    <string name="browse_title">Browse Products</string>
+    <string name="title_activity_view_service_package">view_service_package</string>
+    <string name="title_activity_assist_customer">AssistCustomer</string>
+
+    <style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <!-- View Bill Activity screen -->
+    <string name="title_activity_view_bill">ViewBillActivity</string>
+    <string name="bill_000">View Bill</string>
+    <string name="bill_001">Type of Fee</string>
+    <string name="bill_002">Price</string>
+    <string name="title_activity_main_menu_customer_rep">MainMenuCustomerRepActivity</string>
+
+
+    <!-- SignUp Dialog -->
+    <string name="alert_dialog_000">Choose Customer Type</string>
+
+</resources>

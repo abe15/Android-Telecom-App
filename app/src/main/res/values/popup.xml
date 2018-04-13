@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- For Logout Popup -->
+    <string name="logout_title">Logout</string>
+    <string name="logout_000">Are you sure you</string>
+    <string name="logout_001">want to logout</string>
+    <string name="logout_002">from your account?</string>
+    <string name="logout_A">Logout</string>
+    <string name="logout_B">Back</string>
+
+    <!-- For Delete Popup -->
+    <string name="delete_title">Delete Account</string>
+    <string name="delete_000">Are you sure you want</string>
+    <string name="delete_001">to delete your account?</string>
+    <string name="delete_002">Remember, you have</string>
+    <string name="delete_003">30 days to retrieve</string>
+    <string name="delete_004">your account via</string>
+    <string name="delete_005">\'Customer Service\'.</string>
+    <string name="delete_006">This cannot be undone</string>
+    <string name="delete_007">afterwards.</string>
+    <string name="delete_A">Delete</string>
+    <string name="delete_B">Back</string>
+
+    <!-- For Subscribe Popup -->
+    <string name="subscribe_title">Subscribe</string>
+    <string name="subscribe_000">Are you sure you</string>
+    <string name="subscribe_001">want to subscribe to</string>
+    <string name="subscribe_002">this service/package?</string>
+    <string name="subscribe_A">Subscribe</string>
+    <string name="subscribe_B">Cancel</string>
+
+    <!-- For Cancel Popup -->
+    <string name="cancel_title">Cancel Subscription</string>
+    <string name="cancel_000">Are you sure you</string>
+    <string name="cancel_001">want to cancel this service?</string>
+    <string name="cancel_002">Terminating this service will</string>
+    <string name="cancel_003">result in a $150 fee.</string>
+    <string name="yes_A">Yes</string>
+    <string name="no_B">No</string>
+
+    <!-- For View Popup -->
+    <string name="viewpop_title">View Products</string>
+    <string name="viewpop_close">Close</string>
+    <string name="viewpop_price">Price:</string>
+    <string name="viewpop_description">Description:</string>
+    <string name="viewpop_null"> --- NULL --- </string>
+
+    <!-- Creates a list of services -->
+    <string-array name="service_list">
+        <item>Wireless</item>
+        <item>$34.44</item>
+        <item>Landlines</item>
+        <item>$12.99</item>
+        <item>Internet</item>
+        <item>Unknown</item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <!-- Creates a list of products -->
+    <string-array name="products_list">
+        <item>Wireless and Landlines</item>
+        <item>$49.99</item>
+        <item>Wireless, Landlines, and Internet</item>
+        <item>$99.99</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:orientation="vertical"
+    android:background="@drawable/popup_bg_000"
+    android:id="@+id/view_popup">
+
+    <ScrollView
+        android:id="@+id/scrollView_10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight = "8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="@string/viewpop_title"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="1dp"
+                android:textSize="35sp"
+                android:textColor="#ff000032"
+                android:background="@drawable/screen_title_000"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="@string/viewpop_null"
+                android:id="@+id/text_000"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginTop="5dp"
+                android:textSize="30sp"
+                android:textColor="#ff000032"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="@string/viewpop_price"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textSize="30sp"
+                android:textColor="#ff000032"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="@string/viewpop_null"
+                android:id="@+id/text_001"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginTop="5dp"
+                android:textSize="25sp"
+                android:textColor="#ff000032"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="@string/viewpop_description"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:textSize="30sp"
+                android:textColor="#ff000032"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/popup_button_000"
+                android:onClick="onClosePopup"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:text="@string/viewpop_close" />
+
+        </TableRow>
+    </LinearLayout>
+
+</LinearLayout>

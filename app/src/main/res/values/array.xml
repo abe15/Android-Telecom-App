@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_dialog_array">
+        <item> "Retail Account" </item>
+        <item> "Commercial Account" </item>
+    </string-array>
+</resources>

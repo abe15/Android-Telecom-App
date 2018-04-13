@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:orientation="vertical"
+
+    android:background="@drawable/bg_activity_004"
+    android:id="@+id/browse_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|bottom"
+        android:orientation="horizontal"
+        android:layout_weight="0.06">
+
+        <TextView
+            android:text="@string/browse_title"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="35sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/promp_bar_003"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:paddingBottom="10dp"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:id="@+id/Services"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:fillViewport="true"
+                    android:paddingBottom="75dp"
+                    android:orientation="vertical"></ScrollView>
+
+                <ScrollView
+                    android:id="@+id/Packages"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:fillViewport="true"
+                    android:paddingBottom="75dp"
+                    android:orientation="vertical"></ScrollView>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_09a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onMenuLogout"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/yellowbutton"
+                style="@style/ButtonText"
+                android:text="@string/universal_001" />
+
+        </TableRow>
+    </LinearLayout>
+
+</LinearLayout>
+

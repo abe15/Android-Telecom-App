@@ -1,0 +1,79 @@
+configurations {
+    all*.exclude group: 'com.android.support', module: 'support-v4'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: "jacoco"
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "cse110.android.bigheroeight.com.ucsdtelecom"
+        minSdkVersion 14
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+    jacoco {
+        version "0.7.1.201405082137"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFile 'proguard-rules.txt'
+            debuggable true
+            testCoverageEnabled=true
+        }
+    }
+}
+jacoco {
+    toolVersion "0.7.1.201405082137"
+}
+def coverageSourceDirs = [
+        '../app/src/main/java'
+]
+task jacocoTestReport(type: JacocoReport, dependsOn: "testDebug") {
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports after running tests."
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+    classDirectories = fileTree(
+            dir: './build/intermediates/classes/debug',
+            excludes: ['**/R*.class',
+                       '**/*$InjectAdapter.class',
+                       '**/*$ModuleAdapter.class',
+                       '**/*$ViewInjector*.class'
+            ])
+    sourceDirectories = files(coverageSourceDirs)
+    executionData = files("$buildDir/jacoco/testDebug.exec")
+    // Bit hacky but fixes https://code.google.com/p/android/issues/detail?id=69174.
+    // We iterate through the compiled .class tree and rename $$ to $.
+    doFirst {
+        new File("$buildDir/intermediates/classes/").eachFileRecurse { file ->
+            if (file.name.contains('$$')) {
+                file.renameTo(file.path.replace('$$', '$'))
+            }
+        }
+    }
+}
+
+
+
+dependencies {
+
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
+    compile 'com.github.dmytrodanylyk.circular-progress-button:library:1.1.3'
+    androidTestCompile 'com.jayway.android.robotium:robotium-solo:5.3.1'
+}

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:orientation="vertical"
+    android:background="@drawable/bg_activity_004"
+    android:id="@+id/menu_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="left|bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:text="@string/account_title"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="35sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/promp_bar_003"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView_01"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight = "8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button_04"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onAccount_00"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/bluebutton"
+                style="@style/ButtonText"
+                android:text="@string/account_000" />
+
+            <Button
+                android:id="@+id/button_05"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onAccount_01"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/bluebutton"
+                style="@style/ButtonText"
+                android:text="@string/account_001" />
+
+            <Button
+                android:id="@+id/button_06"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onAccount_02"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/bluebutton"
+                style="@style/ButtonText"
+                android:text="@string/account_002" />
+
+
+
+            <Button
+                android:id="@+id/button_07"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onAccount_03"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/bluebutton"
+                style="@style/ButtonText"
+                android:text="@string/account_003" />
+
+            <Button
+                android:id="@+id/button_08"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onAccount_04"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/bluebutton"
+                style="@style/ButtonText"
+                android:text="@string/account_004" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_09a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onMenuLogout"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/yellowbutton"
+                style="@style/ButtonText"
+                android:text="@string/universal_001" />
+
+        </TableRow>
+    </LinearLayout>
+
+</LinearLayout>
+

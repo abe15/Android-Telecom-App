@@ -10,8 +10,8 @@ I made some videos for this project for extra credit.
 
 This first video is the first version of the app. I didn't have time to prepare for this video so its not that good.
 
-[Android](https://www.youtube.com/watch?v=ezmHFUxbcL4)
+[Android First Version](https://www.youtube.com/watch?v=ezmHFUxbcL4)
 
 The second video is of the completed app. I did have time to prepare this time.
 
-[android](https://www.youtube.com/watch?v=1sqzWG73v3c&t=)
+[Android App Completed](https://www.youtube.com/watch?v=1sqzWG73v3c&t=)
